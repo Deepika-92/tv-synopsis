@@ -1,0 +1,25 @@
+html
+    head 
+        link(rel="stylesheet", href="/css/stylesheet.css")
+        title Tv Synopsis
+    body
+        h1= showdata.title
+        div(class="text")
+            h2 Developed By
+            div(class="text")
+                ul
+                    for name in showdata.developedBy
+                        li= name
+
+            h2 Starring
+            div(class="text")
+            for actors in showdata.starring
+                ul
+                    li= actors
+
+            h2 Seasons
+            div(class="text")
+            for season in showdata.seasons
+                ul
+                    li= numbers
+                        a(href=`/season/${season.number}`)= `Season ${season.number}` 
