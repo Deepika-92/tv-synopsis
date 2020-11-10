@@ -24,6 +24,6 @@ app.all('*', (request, response) => {
   response.sendStatus(404)
 })
 
-app.listen(1337, () => {
-  console.log('Listening on 1337...') // eslint-disable-line no-console
+app.listen(1440, () => {
+  console.log('Listening on 1440...') // eslint-disable-line no-console
 })
